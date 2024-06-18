@@ -1,0 +1,33 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific product
+  skuNumber:
+    type: string
+    description: Stock Keeping Unit number to uniquely identify a product
+  upcNumber:
+    type: string
+    description: Universal Product Code number to uniquely identify a product
+  name:
+    type: string
+    description: Product name
+  description:
+    type: string
+    description: Product description
+  widthInches:
+    type: number
+    description: Product width in inches
+  heightInches:
+    type: number
+    description: Product height in inches
+  depthInches:
+    type: number
+    description: Product depth in inches
+  manufacturer:
+    type: string
+    description: Product manufacturer
+  suggestedRetailPrice:
+    type: float
+    description: Product suggested retail price
