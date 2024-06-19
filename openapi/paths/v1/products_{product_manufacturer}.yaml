@@ -1,14 +1,14 @@
 get: 
   tags: 
     -  Product 
-  summary: Get a product by SKU
+  summary: Get a list of products by manufacturer
   description:  |
-    Get a product by SKU
+    Get a list of products by manufacturer
   operationId: getProductByManufacturer
   parameters: 
     - name: product_manufacturer
       in: path
-      description: The SKU of the product to retrieve
+      description: The manufacturer of the list of products to retrieve
       required: true
       schema: 
         type: string
