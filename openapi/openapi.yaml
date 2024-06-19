@@ -39,6 +39,16 @@ paths:
     $ref: paths/v1/customers.yaml
   /v1/customers/{customer_id}:
     $ref: paths/v1/customers_{customer_id}.yaml
+  /v1/products:
+    $ref: paths/v1/products.yaml
+  /v1/products/products_{product_id}.yaml:
+    $ref: paths/v1/products_{product_id}.yaml
+  /v1/products/products/manufacturer/{product_manufacturer}.yaml:
+    $ref: paths/v1/products_{product_manufacturer}.yaml
+  /v1/products/products/sku/{product_sku}.yaml:
+    $ref: paths/v1/products_{product_sku}.yaml
+  /v1/products/products/upc/{product_upc}.yaml:
+    $ref: paths/v1/products_{product_upc}.yaml
   # /echo:
   #   $ref: paths/echo.yaml
   # /pathItem:

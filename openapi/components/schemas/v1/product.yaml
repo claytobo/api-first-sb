@@ -29,5 +29,5 @@ properties:
     type: string
     description: Product manufacturer
   suggestedRetailPrice:
-    type: float
+    type: number
     description: Product suggested retail price
