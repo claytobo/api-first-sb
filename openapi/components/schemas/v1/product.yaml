@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific product
+    readOnly: true
   skuNumber:
     type: string
     description: Stock Keeping Unit number to uniquely identify a product
@@ -19,15 +20,32 @@ properties:
   widthInches:
     type: number
     description: Product width in inches
+    minimum: 0
+    maximum: 1000
   heightInches:
     type: number
     description: Product height in inches
+    minimum: 0
+    maximum: 1000
   depthInches:
     type: number
     description: Product depth in inches
+    minimum: 0
+    maximum: 1000
+  weight:
+    type: number
+    description: Product weight in ounces
+    minimum: 0
+    maximum: 10000 
   manufacturer:
     type: string
     description: Product manufacturer
   suggestedRetailPrice:
     type: number
     description: Product suggested retail price
+  
+required: 
+  - name
+  - description
+  - manufacturer
+  - suggestedRetailPrice
