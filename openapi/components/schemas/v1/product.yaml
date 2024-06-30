@@ -8,41 +8,55 @@ properties:
   skuNumber:
     type: string
     description: Stock Keeping Unit number to uniquely identify a product
+    example: WD145S9802
+    minLength: 8
+    maxLength: 10
   upcNumber:
     type: string
     description: Universal Product Code number to uniquely identify a product
+    minLength: 8
+    maxLength: 13
+    example: 00123456789012
   name:
     type: string
     description: Product name
+    example: Cthulhu T-Shirt
   description:
     type: string
     description: Product description
+    example: Don't like either of your choices this election? Are you tired of picking the lesser of two evils? Then why not go all the way and just get it over with by choosing Cthulhu? Do it because in the end, you know that you he doesn't mind because you don't matter.
   widthInches:
     type: number
     description: Product width in inches
     minimum: 0
     maximum: 1000
+    example: 20
   heightInches:
     type: number
     description: Product height in inches
     minimum: 0
     maximum: 1000
+    example: 10
   depthInches:
     type: number
     description: Product depth in inches
     minimum: 0
     maximum: 1000
+    example: 1
   weight:
     type: number
     description: Product weight in ounces
     minimum: 0
-    maximum: 10000 
+    maximum: 10000
+    example: 8
   manufacturer:
     type: string
     description: Product manufacturer
+    example: Tongue In Cheek Productions
   suggestedRetailPrice:
     type: number
     description: Product suggested retail price
+    example: $14.99
   
 required: 
   - name
