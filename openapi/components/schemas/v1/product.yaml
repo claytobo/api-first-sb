@@ -6,13 +6,17 @@ properties:
     description: Unique identifier representing a specific product
     readOnly: true
   skuNumber:
-    type: string
+    type: 
+      - string
+      - 'null'
     description: Stock Keeping Unit number to uniquely identify a product
     example: WD145S9802
     minLength: 8
     maxLength: 10
   upcNumber:
-    type: string
+    type: 
+      - string
+      - 'null'
     description: Universal Product Code number to uniquely identify a product
     minLength: 8
     maxLength: 13
@@ -26,25 +30,25 @@ properties:
     description: Product description
     example: Don't like either of your choices this election? Are you tired of picking the lesser of two evils? Then why not go all the way and just get it over with by choosing Cthulhu? Do it because in the end, you know that you he doesn't mind because you don't matter.
   widthInches:
-    type: number
+    type: [number, 'null']
     description: Product width in inches
     minimum: 0
     maximum: 1000
     example: 20
   heightInches:
-    type: number
+    type: [number, 'null']
     description: Product height in inches
     minimum: 0
     maximum: 1000
     example: 10
   depthInches:
-    type: number
+    type: [number, 'null']
     description: Product depth in inches
     minimum: 0
     maximum: 1000
     example: 1
   weight:
-    type: number
+    type: [number, 'null']
     description: Product weight in ounces
     minimum: 0
     maximum: 10000
