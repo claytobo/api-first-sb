@@ -6,13 +6,13 @@ properties:
   displayName: 
     type: string
   cardNumber:
-    type: integer
+    type: string
   expiryMonth:
     type: integer
   expiryYear:
     type: integer
   cvv:
-    type: integer
+    type: string
   dateCreated:
     type: string
     format: date-time
