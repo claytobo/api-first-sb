@@ -17,4 +17,4 @@ properties:
     type: string
     description: The phone number of the customer
   selectedPaymentMethod:
-    $ref: payment_method.yaml
+    $ref: payment_methods.yaml
