@@ -31,11 +31,11 @@ servers:
 paths:
   /v1/customers:
     $ref: paths/v1/customers.yaml
-  /v1/customers/{customerId}:
+  /v1/customers/{customer_id}:
     $ref: paths/v1/customers_{customer_id}.yaml
   /v1/products:
     $ref: paths/v1/products.yaml
-  /v1/products/{productId}:
+  /v1/products/{product_id}:
     $ref: paths/v1/products_{product_id}.yaml
   /v1/orders:
     $ref: paths/v1/orders.yaml
